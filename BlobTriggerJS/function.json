@@ -1,0 +1,19 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "demo/{name}",
+      "connection": "StorageConnectionString"
+    },
+    {
+      "tableName": "Output",
+      "connection": "StorageConnectionString",
+      "name": "tableBinding",
+      "type": "table",
+      "direction": "out"
+    }
+  ]
+}
